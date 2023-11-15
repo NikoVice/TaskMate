@@ -25,4 +25,5 @@ Notes:
 - To ensure the security of user data, it is necessary to implement an authentication and authorization mechanism using Firebase Authentication.
 - It is recommended to develop data backup to prevent information loss in case of system failures.
 - Provide for the possibility of scaling the system to handle a large number of users and tasks.
-- Development should be carried out in stages, with regular verification and testing of the functionality.
+- Development should be carried out in stages, with regular verification and testing of the functionality.![image](https://github.com/NikoVice/TaskMate/assets/62925552/43cd37fb-4a16-4259-921f-ccbbc83b0fcf)
+
