@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_color2">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="62dp"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="96dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="84dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/main_text"
+            android:textColor="@color/main_color2"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="135dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/U_Task_Text"
+            android:textColor="@color/main_color2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.005"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-36dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="125dp"
+            android:layout_height="118dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/statistic_text"
+            android:textColor="@color/main_color2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.086"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-31dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/connect_friend_text"
+            android:textColor="@color/main_color2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-17dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="345dp"
+        android:layout_height="445dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="341dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Не забывай выполнять свои задачи :)"
+        android:textColor="@color/main_color"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Ваши задачи:"
+        android:textColor="@color/main_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
